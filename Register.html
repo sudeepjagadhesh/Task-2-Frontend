@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery Delivery Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .registration-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Register for Grocery Delivery</h2>
+        <form action="register.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+           
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+           
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" required>
+           
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+           
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
